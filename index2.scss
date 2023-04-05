@@ -1,0 +1,61 @@
+@use '_reset.scss';
+
+.ani-button{
+    padding: 15px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+}
+
+.ani-button:hover{
+    animation-name: move;
+    animation-duration: 0.5s;
+}
+
+.ani-x {
+    margin: auto;
+    text-align: center;
+    font-size: 70px;
+    width: 84px;
+    cursor: pointer;
+  }
+
+.ani-x:hover{
+    animation-name: bigx;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    0%{
+        transform:rotate(0deg)
+    }
+    25%{
+        transform:rotate(-5deg)
+    }
+    50%{
+        transform:rotate(5deg)
+    }
+    75%{
+        transform:rotate(-5deg)
+    }
+    100%{
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes bigx{
+    0%{
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(-15deg)
+    }
+    100%{
+        transform: rotate(50deg) scale(1.5)
+    }
+}
