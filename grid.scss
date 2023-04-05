@@ -1,0 +1,143 @@
+@use '_reset.scss';
+
+body{
+    background-color:#eee;
+}
+
+.side-bar i{
+    margin-top: 20px;
+    float: left;
+}
+
+.side-bar{
+    width: 200px;
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,50px);
+    text-align: right;
+    color: white;
+    transition: all 1s;
+    transform: translateX(-150px);
+    padding: 20px;
+}
+
+.side-bar:hover{
+    transform: translate(0px);
+    text-align: left;
+}
+
+.flex-container{
+    background-color: white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.flex-item input{
+    font-size: 25px;
+    width: 250px;
+}
+
+.flex-item{ 
+    padding: 20px;
+    color:grey;
+    font-size: 20px;
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.Content{
+    display: grid;
+    margin-left: 60px;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.Card-form{
+    background-color: white;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgray;
+    position: relative;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.Card-form i{
+    position: absolute;
+    top:35px;
+    right: 20px;
+}
+
+.mid-container h3{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.bottom-container{
+    width: 100%;
+    padding: 30px;
+}
+
+.chart{
+    margin-left: 40px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+.chart-form{
+    padding: 10px;
+}
+
+.bt-text{
+    width: 400px;
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header{
+    background-color:rgba(0,0,0,.03);
+}
+
+.chart-header {
+    background-color:rgba(0,0,0,.03);
+    padding: 10px;
+}
+
+.list-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group-item{
+    display: block;
+}
+
+
+
+
+
+
