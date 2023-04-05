@@ -1,0 +1,52 @@
+div{
+    box-sizing: border-box;
+}
+
+img{
+    width: 70px;
+    height: 100px;
+}
+
+.cart-form th,.cart-form td{
+    border-bottom:3px solid black ;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-box{
+    background: #c2d3de;
+    width: 100%;
+    padding: 40px;
+}
+
+.test{
+    border-style:none ;
+}
+
+.cart-form{
+    background: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    border-collapse:collapse ;
+}
+
+
+
+.cart-form th:nth-child(2){
+    width: 300px;
+}
+
+.tag{
+    padding-top: 20px;
+}
+
+.btn-form{
+    background-color: orange;
+    color: white;
+    float: right;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
